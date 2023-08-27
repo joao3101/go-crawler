@@ -16,11 +16,6 @@ pre-commit install
 ```
 To install `pre-commit`.
 
-```bash
-go run ./cmd/main.go
-```
-To run the app
-
 Before any commits, always run:
 ```bash
 pre-commit run --all-files
@@ -32,7 +27,7 @@ Other useful commands, such as unit tests, are on the [Makefile](./Makefile).
 ## Usage
 
 ```bash
-make run
+go run ./cmd/main.go
 ```
 
 ## Contributing
