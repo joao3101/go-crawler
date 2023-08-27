@@ -12,9 +12,20 @@ go mod tidy
 To install the dependencies.
 
 ```bash
+pre-commit install
+```
+To install `pre-commit`.
+
+```bash
 go run ./cmd/main.go
 ```
 To run the app
+
+Before any commits, always run:
+```bash
+pre-commit run --all-files
+```
+This will check for lint being according to standards of the project and also check if go.mod is the way we want it to be.
 
 Other useful commands, such as unit tests, are on the [Makefile](./Makefile).
 
