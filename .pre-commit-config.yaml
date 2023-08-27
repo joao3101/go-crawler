@@ -1,0 +1,26 @@
+repos:
+  - repo: https://github.com/tekwizely/pre-commit-golang
+    rev: v1.0.0-rc.1
+    hooks:
+      - id: go-mod-tidy-repo
+
+  - repo: https://github.com/golangci/golangci-lint
+    rev: v1.53.3
+    hooks:
+      - id: golangci-lint
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-yaml
+        stages: [commit]
+        exclude: ^deploy/helm
+      - id: check-json
+        stages: [commit]
+        exclude: ^.vscode
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: 3.5.2
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
