@@ -6,15 +6,15 @@ The goal of this project is to get all links on the same domain inside a initial
 
 Please change the [config.yaml](./config/config.yaml) with the wanted URL to crawl and the number of simultaneously Go Routines you want to run. 
 
+To install the dependencies.
 ```bash
 go mod tidy
 ```
-To install the dependencies.
 
+To install `pre-commit`.
 ```bash
 pre-commit install
 ```
-To install `pre-commit`.
 
 Before any commits, always run:
 ```bash
