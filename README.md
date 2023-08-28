@@ -30,6 +30,17 @@ Other useful commands, such as unit tests, are on the [Makefile](./Makefile).
 go run ./cmd/main.go
 ```
 
+Or, you can run it on Docker. First build the image:
+```bash
+docker build -t go-crawler .
+```
+
+Than run it:
+Or, you can run it on Docker. First build the image:
+```bash
+docker run go-crawler
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

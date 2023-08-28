@@ -89,7 +89,7 @@ func (c *crawler) crawl(url *url.URL) {
 						c.visitedUrls[linkURL.String()] = true
 						c.mutex.Unlock()
 
-						go c.crawl(linkURL)
+						go c.crawl(linkURL) // Can calling this as a routine give me problems? Check
 					} else {
 						// Even if there's no match, still need to unlock the mutex
 						c.mutex.Unlock()
